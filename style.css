@@ -29,6 +29,12 @@
     margin-top: 36px;
 }
 
+.PBOX img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .stats {
     background: tomato;
     padding: 0px;
@@ -50,51 +56,22 @@
 }
 
 .selectJoey {
-    background: tomato;
-    padding: 0px;
-    width: 175px;
-    height: 120px;
-    line-height: 160px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    min-width: 100px;
-
     grid-area: Joey;
 }
 
 .selectJordan {
-    background: tomato;
-    padding: 0px;
-    width: 175px;
-    height: 120px;
-    line-height: 160px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    min-width: 100px;
-
     grid-area: Jordan;
 }
 
 .selectJosh {
-    background: tomato;
-    padding: 0px;
-    width: 175px;
-    height: 120px;
-    line-height: 160px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-    min-width: 100px;
-
     grid-area: Josh;
 }
 
 .selectCarter {
+    grid-area: Carter;
+}
+
+.box div {
     background: tomato;
     padding: 0px;
     width: 175px;
@@ -105,16 +82,51 @@
     font-size: 20px;
     text-align: center;
     min-width: 100px;
+}
 
-    grid-area: Carter;
+.viewStats {
+    display: none;
+}
+
+.viewStats div {
+    background-color: pink;
+    height: 38px;
+    width: 172px;
+    text-align: center;
 }
 
 @media only screen and (max-width: 800px) {
+    .headbar {
+        font-size: 48px;
+    }
+    .choosefighter {
+        font-size: 24;
+    }
+    .PlayerBox {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .PBOX {
+        width: 100%;
+        height: 250px;
+    }
     .box {
-        display: grid;
+        display: none;
+        /* display: grid;
         grid-template:
             "Joey Jordan" 100px
             "Josh Carter" 100px
-        ;
+        ; */
+    }
+    .viewStats {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    .headbar {
+        margin-top: 37px;
+    }
+    .choosefighter {
+        margin: 0px;
     }
 }
