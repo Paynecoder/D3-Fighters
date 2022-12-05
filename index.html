@@ -1,58 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3 Fighters</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>D3 Fighters</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <section class="main">
+      <div class="headbar">D3 FIGHTERS</div>
+      <div class="choosefighter">CHOOSE YOUR FIGHTER</div>
 
-<body>
-  <div class="headbar">D3 FIGHTERS</div>
-  <div class="choosefighter">CHOOSE YOUR FIGHTER</div>
+      <div class="PlayerBox">
+        <div class="PBOX">
+          <img id="playerone" src="/assets/raichu.jpg" alt="" />
+        </div>
+        <div class="PBOX">
+          <img src="assets/bear.jpg" alt="" />
+        </div>
+      </div>
 
-  <div class="PlayerBox">
-    <div class="PBOX">
-      <img src="assets/apple.jpg" alt="">
-    </div>
-    <div class="PBOX">
-      <img src="assets/bear.jpg" alt="">
-    </div>
-  </div>
+      <div class="box">
+        <div onclick="joey();" class="selectJoey">
+          <img src="/assets/bulbasaur.png" alt="" />
+          <p class="joeytxt">Joey</p>
+        </div>
+        <div onclick="jordan();" class="selectJordan">
+          <img src="/assets/charmander.png" alt="" />
+          <p class="jordantxt">Jordan</p>
+        </div>
+        <div onclick="joshua();" class="selectJosh">
+          <img src="/assets/pikachu.png" alt="" />
+          <p class="joshtxt">Josh</p>
+        </div>
+        <div onclick="carter();" class="selectCarter">
+          <img src="/assets/squirtle.png" alt="" />
+          <p class="cartertxt">Carter</p>
+        </div>
+      </div>
 
-  <div class="box">
-    <div class="selectJoey">Joey</div>
-    <div class="selectJordan">Jordan</div>
-    <div class="selectJosh">Josh</div>
-    <div class="selectCarter">Carter</div>
-  </div>
+      <div class="container">
+        <div class="buttons-container">
+          <button id="left" onclick="masterleft();">
+            <i class="Back">Back</i>
+          </button>
+          <button id="right" onclick="masterright();">
+            <i class="Next">Next</i>
+          </button>
+        </div>
 
-  <div class="viewStats">
-    <div>VIEW STATS</div>
-  </div>
+        <div class="radios-container">
+          <input
+            type="radio"
+            class="radio"
+            id="radio-1"
+            name="group-radio"
+            value="radio1"
+            checked
+          />
+          <input
+            type="radio"
+            class="radio"
+            id="radio-2"
+            name="group-radio"
+            value="radio2"
+          />
+          <input
+            type="radio"
+            class="radio"
+            id="radio-3"
+            name="group-radio"
+            value="radio3"
+          />
+          <input
+            type="radio"
+            class="radio"
+            id="radio-4"
+            name="group-radio"
+            value="radio4"
+          />
+        </div>
+      </div>
 
-  <div class="container">
-
-    <div class="buttons-container">
-      <button id="left" onclick="left();"><i class='Back'>Back</i></button>
-      <button id="right" onclick="right();"><i class='Next'>Next</i></button>
-
-    </div>
-
-    <div class="radios-container">
-
-      <input type="radio" class="radio" id="radio-1" name="group-radio" value="radio1" checked>
-      <input type="radio" class="radio" id="radio-2" name="group-radio" value="radio2">
-      <input type="radio" class="radio" id="radio-3" name="group-radio" value="radio3">
-      <input type="radio" class="radio" id="radio-4" name="group-radio" value="radio4">
-    </div>
-
-
-  </div>
-
-  <script src="app.js"></script>
-</body>
-
+      <div class="fight">
+        <button id="fightbtn" onclick="sendto();" class="fightbtn">
+          Fight
+        </button>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
 </html>
