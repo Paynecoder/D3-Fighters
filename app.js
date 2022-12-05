@@ -100,3 +100,22 @@ function carter() {
     carter.src = "/assets/blastoise.jpg";
   }
 }
+
+
+/**
+ * Fight Btn (send to personal)
+ */
+
+var sending = document.getElementById("playerone")
+
+function sendto() {
+  if (sending.src.match("/assets/raichu.jpg")) {
+    location.href = "https://www.youtube.com"
+  } else if (sending.src.match("/assets/charizard.webp")) {
+    location.href = "https://www.tiktok.com/"
+  } else if (sending.src.match("/assets/venusaur.jpg")) {
+    location.href = "https://store.steampowered.com/"
+  } else if (sending.src.match("/assets/blastoise.jpg")) {
+    location.href = "https://youtu.be/UzSlwEE7NME"
+  }
+}
