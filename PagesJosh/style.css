@@ -251,11 +251,10 @@ body {
 .skillyimg {
   height: 125px;
   width: 125px;
-  transition: transform .2s;
 }
 
 .skillyimg:hover {
-  transform: scale(1.23);
+
 }
 
 .skillstop {
@@ -285,21 +284,20 @@ body {
   overflow: hidden;
   background: #e5e5e5;
   border-radius: 6px;
-  transition: transform .2s;
+
 }
 
 .progress:hover {
-  transform: scale(1.5);
+
 }
 
 .bar {
   float: left;
   background: green;
-  transition: transform .2s
 }
 
 .bar:hover {
-  transform: scale(1.05);
+
 }
 
 .percent {
