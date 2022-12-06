@@ -110,7 +110,7 @@ var sending = document.getElementById("playerone")
 
 function sendto() {
   if (sending.src.match("/assets/raichu.jpg")) {
-    location.href = "https://www.youtube.com"
+    location.href = "/PagesJosh/index.html"
   } else if (sending.src.match("/assets/charizard.webp")) {
     location.href = "https://www.tiktok.com/"
   } else if (sending.src.match("/assets/venusaur.jpg")) {
