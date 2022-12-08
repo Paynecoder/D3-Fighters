@@ -116,6 +116,6 @@ function sendto() {
   } else if (sending.src.match("/assets/venusaur.jpg")) {
     location.href = "https://store.steampowered.com/"
   } else if (sending.src.match("/assets/blastoise.jpg")) {
-    location.href = "https://youtu.be/UzSlwEE7NME"
+    location.href = "/carterpages/index.html"
   }
 }

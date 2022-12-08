@@ -12,6 +12,7 @@
 
 body {
     margin: 0;
+    background-color: black
 }
 
 /* D3 FIGHTERS */
@@ -21,6 +22,7 @@ body {
     justify-content: center;
     font-size: 100px;
     font-family: 'VT323';
+    color: red;
 }
 
 /* CHOOSE YOUR FIGHTER */
@@ -29,6 +31,7 @@ body {
     font-size: 30px;
     margin-top: 20px;
     font-family: 'VT323';
+    color: red;
 }
 
 /*1p box & 2p box */
