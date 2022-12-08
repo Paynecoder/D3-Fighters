@@ -112,7 +112,7 @@ function sendto() {
   if (sending.src.match("/assets/raichu.jpg")) {
     location.href = "/PagesJosh/index.html"
   } else if (sending.src.match("/assets/charizard.webp")) {
-    location.href = "https://www.tiktok.com/"
+    location.href = "/PageJordan1/index.html"
   } else if (sending.src.match("/assets/venusaur.jpg")) {
     location.href = "https://store.steampowered.com/"
   } else if (sending.src.match("/assets/blastoise.jpg")) {

@@ -1,0 +1,194 @@
+@import url("http://fonts.googleapis.com/css2?family=VT323&display=swap");
+
+@font-face {
+    font-family: VT323;
+    src: url("http://fonts.googleapis.com/css2?family=VT323&display=swap");
+  }
+
+.D3 {
+    color: white;
+    padding-left: 100px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: VT323;
+}
+
+.D3{
+    color: white;
+    padding-left: 100px;
+    margin-top: 20px;
+    font-size: 40px;
+    font-family: VT323;
+}
+
+h1 {
+    color: white;
+    font-family: VT323;
+}
+
+h2 {
+    color: white;
+    font-family: VT323;
+}
+
+.justMe {
+    margin-left: 250px;
+    margin-top: 70px;
+    border-radius: 20px;
+}
+
+#Me {
+    display: flex;
+    margin-left: 215px;
+    flex-direction: column;
+    margin-top: 200px;
+    font-size: 26px;
+    font-family: VT323;
+}
+
+.AboutMe {
+    margin-top: -533px;
+    margin-left: 700px;
+    font-size: 30px;
+    font-family: VT323;
+    color: white;
+}
+
+.MoreAboutMe {
+    margin-left: 700px;
+    font-family: VT323;
+}
+
+body {
+    background: rgb(24, 24, 36);
+}
+
+
+/* Buttons */
+.container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 950px;
+    font-size: 10px;
+    margin-top: -50px;
+    font-family: VT323;
+}
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0px 4px 4px #DF00FF;
+}
+
+button {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    border-radius: 25px;
+    transform: translate(-50%, -50%);
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 15px 50px;
+    overflow: hidden;
+    transition: all 0.5s;
+    margin-right: 20px;
+    width: 20px;
+    font-family: VT323;
+}
+
+.Home {
+    display: block;
+    font-size: 20px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: -13px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: VT323;
+}
+
+.Education {
+    display: block;
+    font-size: 20px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: -37px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: VT323;
+}
+
+.Projects {
+    display: block;
+    font-size: 20px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: -29px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: VT323;
+}
+
+.Hobbies {
+    display: block;
+    font-size: 20px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: -29px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: VT323;
+}
+
+img {
+    width: 26%;
+    height: 26%;
+    border-radius: 20px;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        margin-left: 7%;
+        margin-top: 4px;
+        transform: translate(0%, 0%);
+    }
+
+    .button {
+        margin-right: 0;
+    }
+
+    .D3 {
+        font-size: 20px;
+    }
+
+    img {
+        width: 56%;
+        height: 26%;
+        border-radius: 20px;
+        margin-left: 65px;
+        margin-top: -15px;
+    }
+
+    button:hover {
+        box-shadow: none;
+    }
+
+    button {
+        margin-right: -18px;
+    }
+
+    .D3 {
+        font-size: 35px;
+        margin-left: -41px;
+    }
+
+    .AboutMe {
+        margin-top: 23px;
+        margin-left: 31px;
+        font-size: 9px;
+      }
+
+}
