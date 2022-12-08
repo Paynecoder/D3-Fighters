@@ -20,12 +20,12 @@ function left() {
 }
 
 function leftimg() {
-  if (imageback.src.match("/assets/blastoise.jpg")) {
-    imageback.src = "/assets/venusaur.jpg";
-  } else if (imageback.src.match("/assets/venusaur.jpg")) {
-    imageback.src = "/assets/charizard.webp";
-  } else if (imageback.src.match("/assets/charizard.webp")) {
-    imageback.src = "/assets/raichu.jpg"
+  if (imageback.src.match("/assets/carter.png")) {
+    imageback.src = "/assets/joey.png";
+  } else if (imageback.src.match("/assets/joey.png")) {
+    imageback.src = "/assets/jordan.png";
+  } else if (imageback.src.match("/assets/jordan.png")) {
+    imageback.src = "/assets/joshua.png"
   }
 }
 
@@ -42,14 +42,14 @@ function right() {
 }
 
 function rightimg() {
-  if (imageright.src.match("/assets/raichu.jpg")) {
-    imageright.src = "/assets/charizard.webp";
-  } else if (imageright.src.match("/assets/charizard.webp")) {
-    imageright.src = "/assets/venusaur.jpg";
-  } else if (imageright.src.match("/assets/venusaur.jpg")) {
-    imageright.src = "/assets/blastoise.jpg";
+  if (imageright.src.match("/assets/joshua.png")) {
+    imageright.src = "/assets/jordan.png";
+  } else if (imageright.src.match("/assets/jordan.png")) {
+    imageright.src = "/assets/joey.png";
+  } else if (imageright.src.match("/assets/joey.png")) {
+    imageright.src = "/assets/carter.png";
   } else {
-    imageright.src = "/assets/blastoise.jpg";
+    imageright.src = "/assets/carter.png";
   }
 }
 
@@ -60,44 +60,44 @@ function rightimg() {
 function joey() {
   var joey = document.getElementById("playerone");
   if (
-    joey.src.match("/assets/blastoise.jpg") ||
-    joey.src.match("/assets/raichu.jpg") ||
-    joey.src.match("/assets/charizard.webp")
+    joey.src.match("/assets/carter.png") ||
+    joey.src.match("/assets/joshua.png") ||
+    joey.src.match("/assets/jordan.png")
   ) {
-    joey.src = "/assets/venusaur.jpg";
+    joey.src = "/assets/joey.png";
   }
 }
 
 function jordan() {
   var jordan = document.getElementById("playerone");
   if (
-    jordan.src.match("/assets/venusaur.jpg") ||
-    jordan.src.match("/assets/blastoise.jpg") ||
-    jordan.src.match("/assets/raichu.jpg")
+    jordan.src.match("/assets/joey.png") ||
+    jordan.src.match("/assets/carter.png") ||
+    jordan.src.match("/assets/joshua.png")
   ) {
-    jordan.src = "/assets/charizard.webp";
+    jordan.src = "/assets/jordan.png";
   }
 }
 
 function joshua() {
   var joshua = document.getElementById("playerone");
   if (
-    joshua.src.match("/assets/venusaur.jpg") ||
-    joshua.src.match("/assets/charizard.webp") ||
-    joshua.src.match("/assets/blastoise.jpg")
+    joshua.src.match("/assets/joey.png") ||
+    joshua.src.match("/assets/jordan.png") ||
+    joshua.src.match("/assets/carter.png")
   ) {
-    joshua.src = "/assets/raichu.jpg";
+    joshua.src = "/assets/joshua.png";
   }
 }
 
 function carter() {
   var carter = document.getElementById("playerone");
   if (
-    carter.src.match("/assets/charizard.webp") ||
-    carter.src.match("/assets/venusaur.jpg") ||
-    carter.src.match("/assets/raichu.jpg")
+    carter.src.match("/assets/jordan.png") ||
+    carter.src.match("/assets/joey.png") ||
+    carter.src.match("/assets/joshua.png")
   ) {
-    carter.src = "/assets/blastoise.jpg";
+    carter.src = "/assets/carter.png";
   }
 }
 
@@ -109,13 +109,18 @@ function carter() {
 var sending = document.getElementById("playerone")
 
 function sendto() {
-  if (sending.src.match("/assets/raichu.jpg")) {
+  if (sending.src.match("/assets/joshua.png")) {
     location.href = "/PagesJosh/index.html"
-  } else if (sending.src.match("/assets/charizard.webp")) {
+  } else if (sending.src.match("/assets/jordan.png")) {
     location.href = "/PageJordan1/index.html"
-  } else if (sending.src.match("/assets/venusaur.jpg")) {
+  } else if (sending.src.match("/assets/joey.png")) {
     location.href = "https://store.steampowered.com/"
-  } else if (sending.src.match("/assets/blastoise.jpg")) {
+  } else if (sending.src.match("/assets/carter.png")) {
     location.href = "/carterpages/index.html"
   }
 }
+
+/**
+ * PLAYER NAME
+ * 
+ */

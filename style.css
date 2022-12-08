@@ -22,7 +22,7 @@ body {
     justify-content: center;
     font-size: 100px;
     font-family: 'VT323';
-    color: red;
+    color: white;
 }
 
 /* CHOOSE YOUR FIGHTER */
@@ -31,7 +31,7 @@ body {
     font-size: 30px;
     margin-top: 20px;
     font-family: 'VT323';
-    color: red;
+    color: white;
 }
 
 /*1p box & 2p box */
@@ -40,7 +40,31 @@ body {
     flex-direction: row;
     gap: 60px;
     justify-content: center;
+    align-items: center;
 }
+
+.playername {
+    display: flex;
+    flex-direction: column;
+}
+
+.oppname {
+    display: flex;
+    flex-direction: column;
+}
+
+.opptag {
+    color: white;
+    font-size: 30px;
+    margin-top: 2px;
+}
+
+.playertag {
+    color: white;
+    font-size: 30px;
+    margin-top: 2px;
+}
+
 
 .PBOX {
     background: tomato;
@@ -54,6 +78,25 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.EBOX {
+    background: tomato;
+    padding: 0px;
+    width: 300px;
+    height: 440px;
+    margin-top: 36px;
+}
+
+.EBOX img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.vs {
+    color: white;
+    font-size: 60px;
 }
 
 .stats {
@@ -224,6 +267,19 @@ input:checked {
 
 @media only screen and (max-width: 800px) {
 
+    .vs {
+        margin: 0px;
+    }
+
+    .playername {  
+        margin-bottom: 30px;
+
+    }
+
+    .opptag {
+
+    }
+
 
     .headbar {
         font-size: 48px;
@@ -234,13 +290,22 @@ input:checked {
     }
 
     .PlayerBox {
+        display: flex;
         flex-direction: column;
-        gap: 40px;
+        justify-content: center;
+        gap: 15px;
     }
 
     .PBOX {
         width: 100%;
         height: 250px;
+        margin-top: 5px;
+    }
+
+    .EBOX {
+        width: 260px;
+        height: 300px;
+        margin-top: 5px;
     }
 
     .box {
@@ -264,6 +329,7 @@ input:checked {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 40px;
     }
 
     .buttons-container {

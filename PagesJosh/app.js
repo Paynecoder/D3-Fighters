@@ -63,6 +63,7 @@ function changetext() {
 /**
  * Skills Listener
  * There is 100% a more effiecent way to write this; its just how i knew lol
+ * also disregard how i named it
  */
 
 const x1 = document.getElementById("zoomx");
