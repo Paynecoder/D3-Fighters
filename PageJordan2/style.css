@@ -47,16 +47,33 @@ h2 {
 }
 
 .AboutMe {
-    margin-top: -533px;
-    margin-left: 700px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -5px;
+    margin-left: -178px;
     font-size: 30px;
     font-family: VT323;
     color: white;
+    align-content: stretch;
+    align-items: center;
 }
 
-.MoreAboutMe {
-    margin-left: 700px;
-    font-family: VT323;
+.name {
+    margin-top: -323px;
+    margin-left: 150px;
+}
+
+.Info1 {
+    margin-left: -142px;
+}
+
+.Info2 {
+    margin-top: 100px;
+    margin-left: -745px;
+}
+
+.MePart2 {
+    width: 20%;
 }
 
 body {
