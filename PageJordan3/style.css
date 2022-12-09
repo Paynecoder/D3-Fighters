@@ -178,12 +178,18 @@ img {
 
     .AboutMe {
         margin-left: 31px;
-        margin-top: 76px;
+        margin-top: 162px;
         font-size: 19px;
     }
 
     .MoreAboutMe {
         margin-left: 14px;
         font-size: 10px;
+    }
+
+    img {
+        width: 250px;
+        margin-left: 29px;
+        top: 153px;
     }
 }
