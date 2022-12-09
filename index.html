@@ -15,45 +15,87 @@
       <div class="choosefighter">CHOOSE YOUR FIGHTER</div>
 
       <div class="PlayerBox">
+
+        <div class="stats">
+          <div class="statbox">
+            <h3 class="hero">Hero</h3>
+            <p class="insertstat">
+            LVL: 10 <br>
+            HP: 65 <br>
+            MP: 20 <br>
+            </p>
+            <h3 class="statbars">Stats</h3>
+            <p class="insertstatbtm"></p>
+            STR: 25 <br>
+            AGIL: 40 <br>
+            VIT: 37 <br>
+            INT: 70 <br>
+            ATK: 55 <br>
+            DEF: 70 <br>
+          </div>
         <div class="playername">
         <div class="PBOX">
           <img id="playerone" src="/assets/joshua.png" alt="" />
           <p class="playertag" id="ptag">P1: Josh</p>
         </div>
        </div>
+</div>
+
         <h3 class="vs">VS</h3>
+
+      <div class="oppstats">
+        <div class="oppstatbox">
+          <h3 class="hero">Hero</h3>
+          LVL: 99 <br>
+          HP: 99 <br>
+          MP: 99 <br>
+          <h3 class="statbars">Stats</h3>
+          STR: 99 <br>
+          AGIL: 99 <br>
+          VIT: 99 <br>
+          INT: 99 <br>
+          ATK: 99 <br>
+          DEF: 99 <br>
+        </div>
+     
       <div class="oppname">
         <div class="EBOX">
           <img src="/assets/chris.png" alt="" />
           <p class="opptag">P2: Chris</p>
         </div>
       </div>
+    </div>
   </div>
+ </div>
+
+</div>
+
       <div class="box">
-        <div onclick="joey();" class="selectJoey">
-          <img src="/assets/joey.png" alt=""/>
+        <audio src="/assets/select-sound-121244.mp3" id="click"></audio>
+        <div onclick="joey(); select();" class="selectJoey">
+          <img src="/assets/joey.png" alt="" class="joeyimg" tabindex="1"/>
           <p class="joeytxt">Joey</p>
         </div>
-        <div onclick="jordan();" class="selectJordan">
-          <img src="/assets/jordan.png" alt="" />
+        <div onclick="jordan(); select();" class="selectJordan" >
+          <img src="/assets/jordan.png" alt="" class="jordanimg" tabindex="1"/>
           <p class="jordantxt">Jordan</p>
         </div>
-        <div onclick="joshua();" class="selectJosh">
-          <img src="/assets/joshua.png" alt="" />
+        <div onclick="joshua(); select();" class="selectJosh" >
+          <img src="/assets/joshua.png" alt="" class="joshimg" tabindex="1" />
           <p class="joshtxt">Josh</p>
         </div>
-        <div onclick="carter();" class="selectCarter">
-          <img src="/assets/carter.png" alt="" />
+        <div onclick="carter(); select();" class="selectCarter" >
+          <img src="/assets/carter.png" alt="" class="carterimg" tabindex="1"/>
           <p class="cartertxt">Carter</p>
         </div>
       </div>
 
       <div class="container">
         <div class="buttons-container">
-          <button id="left" onclick="masterleft();">
+          <button id="left" onclick="masterleft(); select();">
             <i class="Back">Back</i>
           </button>
-          <button id="right" onclick="masterright();">
+          <button id="right" onclick="masterright(); select();">
             <i class="Next">Next</i>
           </button>
         </div>
@@ -92,7 +134,8 @@
       </div>
 
       <div class="fight">
-        <button id="fightbtn" onclick="sendto();" class="fightbtn">
+        <audio src="/assets/videogame-death-sound-43894.mp3" id="go"></audio>
+        <button id="fightbtn" onclick="sendto(); goaudio();" class="fightbtn">
           Fight
         </button>
       </div>

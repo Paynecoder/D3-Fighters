@@ -1,6 +1,19 @@
 /**
- * MUSIC
+ * Audio
  */
+
+function select() {
+  var audio = document.getElementById("click");
+  audio.play();
+}
+
+function goaudio() {
+  var audio = document.getElementById("go");
+  audio.play();
+}
+
+
+
 
 /**
  * Image Slider Mobile
@@ -73,6 +86,7 @@ function rightimg() {
 function joey() {
   var joey = document.getElementById("playerone");
   var joeytxt = document.getElementById("ptag")
+  var joetstattop = document.getElementById("stattop")
   if (
     joey.src.match("/assets/carter.png") ||
     joey.src.match("/assets/joshua.png") ||
@@ -82,7 +96,6 @@ function joey() {
     joeytxt.textContent = "P1: Joey"
     checked_id = 3;
     document.getElementById("radio-3").checked = true;
-
   }
 }
 
@@ -150,14 +163,3 @@ function sendto() {
   }
 }
 
-
-
-/*
-*Border on hover
- */
-
-var joeyBox = document.getElementById("joeybox")
-
-function borderbox() {
-  joeyBox.style.border = "border: 5px, white"
-}

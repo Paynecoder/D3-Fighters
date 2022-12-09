@@ -28,10 +28,10 @@ body {
 .headbar {
     display: flex;
     justify-content: center;
-    text-align: center;
     font-size: 100px;
     font-family: 'VT323';
     color: white;
+    margin-left: 20px;
 }
 
 /* CHOOSE YOUR FIGHTER */
@@ -126,7 +126,6 @@ body {
     margin: 0px;
 }
 
-
 .joeytxt {
     font-size: 30px;
     margin-top: 7px;
@@ -134,6 +133,27 @@ body {
     color: white;
     text-align: center;
 }
+
+.joeyimg:focus {
+    outline: 5px solid #fff !important;
+    overflow: hidden;
+}
+
+
+.jordanimg:focus {
+    outline: 5px solid #fff !important;
+}
+
+
+.joshimg:focus {
+    outline: 5px solid #fff !important;
+}
+
+
+.carterimg:focus {
+    outline: 5px solid #fff !important;
+}
+
 
 .selectJordan {
     display: flex;
@@ -189,25 +209,13 @@ body {
 }
 
 
-
-.viewStats {
-    display: none;
-}
-
-.viewStats div {
-    background-color: pink;
-    height: 38px;
-    width: 172px;
-    text-align: center;
-}
-
 button {
     background-color: #2F2830;
     border: 0;
-    color: #C1AAC6;
+    color: #ffff;
     cursor: pointer;
     width: 43px;
-    height: 26px;
+    height: 30px;
     transition: all 0.3s;
     align-items: center;
     display: flex;
@@ -215,7 +223,7 @@ button {
   }
 
 button:hover {
-    color: blue;
+    color: green;
 }
 
 button i {
@@ -232,8 +240,8 @@ button i {
 
     appearance: none;
     width: 20px;
-    height: 20px;
-    border-top: 0.2vw solid blue;
+    height: 30px;
+    border-top: 0.2vw solid black;
     background-color: #2F2830;
     transition: 0.2s all linear;
     margin-left: -2px;
@@ -243,8 +251,8 @@ button i {
   }
 
 input:checked {
-    border-bottom: 0.2vw solid blue;
-    background-color: blue;
+    border-bottom: 0.2vw solid green;
+    background-color: green;
 }
 
 .radios-container {
@@ -268,12 +276,65 @@ input:checked {
     font-size: 35px;
     line-height: 50px;
     padding-left: 61px;
-    border-radius: 5px;
-    color: red;
+    color: white;
+    background-color: #8b0000;
 }
 
 .fightbtn:hover {
+    color: black;
+}
+
+.stats {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.statbox {
+    display: flex;
+    flex-direction: column;
     color: white;
+    margin-right: 25px;
+    font-size: 25px;
+    outline: 2.5px solid #fff !important;
+    padding: 7.5px;
+}
+
+.oppstats {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.oppstatbox {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 25px;
+    outline: 2.5px solid #fff !important;
+    padding: 7.5px;
+    height: fit-content;
+    margin-top: 75px;
+    margin-left: 25px;
+}
+
+.hero {
+    color: white;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.statbars {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.insertstat {
+    margin: 0px;
+}
+
+.insertstatbtm {
+    margin: 0px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -366,3 +427,4 @@ input:checked {
         padding-top: 17.5px;
     }
 }
+
