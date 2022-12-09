@@ -149,3 +149,15 @@ function sendto() {
     location.href = "/carterpages/index.html"
   }
 }
+
+
+
+/*
+*Border on hover
+ */
+
+var joeyBox = document.getElementById("joeybox")
+
+function borderbox() {
+  joeyBox.style.border = "border: 5px, white"
+}
