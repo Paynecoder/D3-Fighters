@@ -12,8 +12,12 @@ function goaudio() {
   audio.play();
 }
 
+function playbg(){
+  var bgmusic =document.getElementById("my_audio")
+  bgmusic.play();
+  bgmusic.volume = 0.25;
 
-
+}
 
 /**
  * Image Slider Mobile

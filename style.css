@@ -17,12 +17,14 @@ body {
 
 /* D3 FIGHTERS */
 .recordplayer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: fit-content;
-    width: fit-content;
-    margin-right: 0px;
+    color: white;
+    position: absolute;
+    left: 88%;
+    top: 1%;
+}
+
+.recordplayer:hover {
+    text-decoration: underline;
 }
 
 .headbar {
@@ -278,6 +280,7 @@ input:checked {
     padding-left: 61px;
     color: white;
     background-color: #8b0000;
+    border: 5px, solid white !important;
 }
 
 .fightbtn:hover {
