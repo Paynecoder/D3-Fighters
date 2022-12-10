@@ -1,0 +1,451 @@
+body, html {
+    margin: 0px;
+    height: 100vh;
+    font-family: 'VT323', monospace;
+    background-color: black;
+    color: white;
+    }
+
+h1.title {
+    text-align: center;
+    font-size: 40pt;
+    margin-bottom: 0px;
+}
+
+/* CONTENT GRID  */
+div.main-content {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    height: 75vh;
+    grid-template: 
+    "left right" 610px
+    ;
+    column-gap: 20px;
+    margin-top: 0px;
+}
+
+/* ABILITIES COLOR  */
+div.bar {
+    background-color: darkslateblue;
+    height: 22px;
+    width: 400px;
+}
+
+/* PHOTO CARD POSITION */
+div.left-card {
+    grid-area: "left";
+    display: grid;
+    grid-template: 
+    "heading" 50px
+    "pic" 520px
+    "ranking" 1px
+    ;
+    justify-content: center;
+}
+
+div.left-card h1 {
+    color: rgb(91, 164, 95);
+}
+
+/* INFO CARD POSITION  */
+div.right-card {
+    grid-area: "right";
+    display: grid;
+    grid-template:
+    "empty" 50px
+    "box" 520px
+    "filler" 1px
+    ;
+}
+
+
+/* IMG FRAME  */
+div.image {
+    border: white solid 3px;
+    height: 520px;
+    width: 305px;
+    grid-area:'pic';
+}
+
+div.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* INFO (RIGHT) CARD */
+div.mobile-content {
+    display: none;
+}
+
+div.content {
+    border: white solid 3px;
+    height: 520px;
+    max-height: 520px;
+    width: 595px;
+    max-width: 595px;
+    grid-area: "box";
+    padding-left: 20px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: darkred goldenrod;
+}
+
+/* INFO (LEFT) CARD */
+
+div.left-card h1 {
+    margin: 0px;
+    grid-area:"heading";
+}
+
+div.rarity {
+    grid-area:"ranking";
+}
+
+div.another-empty {
+    grid-area: "filler";
+}
+
+div.abilities {
+    display: grid;
+    text-align: left;
+    justify-content: left;
+    margin: 0px;
+}
+
+div.abilities {
+    display: grid;
+    grid-template-rows: 
+    "abilities-heading" 30px
+    "dancing" 25px
+    "sleeping" 25px
+    "design" 25px
+    "coding" 25px
+    ;
+    gap: 10px;
+}
+
+div.abilities h4 {
+    grid-area: "word";
+    margin: 0px;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+div.content div h3 {
+    grid-area: "abilities-heading";
+    margin: 0px;
+    font-size: 30px;
+    color: firebrick;
+}
+
+div.abilities, div.skills, div.training, div.projects {
+    margin-top: 25px;
+}
+
+div.bio {
+    margin-top: 25px;
+}
+
+div.bio p {
+    font-size: 12pt;
+}
+
+div.abilities .bar {
+    grid-area: "bar";
+}
+
+div.dancing {
+    grid-area: "dancing";
+}
+
+div.sleeping {
+    grid-area: "sleeping";
+}
+
+div.design {
+    grid-area: "design";
+}
+
+div.coding {
+    grid-area: "coding";
+}
+
+div.coding div.bar {
+    width: 210px;
+}
+
+div.design div.bar {
+    width: 170px;
+}
+
+div.sleeping div.bar {
+    width: 350px;
+}
+
+div.dancing div.bar {
+    width: 50px;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.projects ul li, div.skills ul li, div.training ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 140px;
+}
+
+div.projects ul li p, div.skills ul li p, div.training ul li p {
+    margin: 0px;
+    font-size: 12pt;
+    color: gray;
+}
+
+ul#projects li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul#training li h4, ul#skills li h4, ul#projects li h4 {
+    margin: 0px;
+    font-weight: normal;
+    font-size: 13pt;
+}
+
+div.icon {
+    width: 50px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+div.icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 10pt;
+}
+
+img.expand-arrow {
+    height: 20px;
+    width: 20px;
+}
+
+div.header {
+    display: flex;
+    gap: 15px;
+}
+
+div.projects {
+    margin-bottom: 25px;
+}
+
+div.overlay {
+    display: none;
+    position: fixed;
+    z-index: 3;
+    left: 50%;
+    top: 50%;
+    margin: 0px;
+    transform: translate(-50%, -50%);
+}
+
+div.faded-bg { 
+    display: none;
+    height: 100vh;
+    width: 100vh;
+    background-color: black;
+    opacity: 95%;
+    z-index: 2;
+}
+
+div.project-image {
+    height: 250px;
+    width: 250px;
+    /* grid-area:'pic'; */
+}
+
+div.project-image img {
+    border: white solid 3px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.project-content {
+    display: flex;
+    gap: 25px;
+}
+
+div.project-text {
+    display: flex;
+    flex-direction: column;
+}
+
+div.project-text {
+    width: 370px;
+}
+
+div.extra-content {
+    display: grid;
+    grid-template: 
+    "details-title" 50px
+    "project-details" 520px
+    ;
+    justify-content: center;
+}
+
+div.bottom-card {
+    border: white solid 3px;
+    height: 500px;
+    width: 945px;
+    margin: 0px;
+    grid-area: "project-details";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    /* overflow-y: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: darkred goldenrod; */
+}
+
+div.extra-content h3 {
+    margin: 0px;
+    font-size: 30px;
+    grid-area: "details-title";
+    color: royalblue;
+}
+
+div.bottom-card img {
+    max-height: 450px;
+    max-width: 400px;
+    margin: 25px;
+}
+
+div.project-info {
+    display: flex;
+    flex-direction: column;
+}
+
+div.project-info p.project-medium {
+    color: gray;
+}
+
+/* FOOTER  */
+footer {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2px;
+    background-color: darkred;
+    margin-top: 15px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0px;
+}
+
+div.mobile-project-info, div.mobile-info {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    div.everything {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.main-content {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.left-card {
+        height: 300px;
+        min-width: 370px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.left-card h1 {
+        text-align: center;
+    }
+
+    div.left-card div.image {
+        max-height: 200px;
+        width: 100%;
+    }
+
+    div.left-card div.image img {
+        object-fit: cover;
+    }
+
+    div.right-card, div.right-card div.content {
+        max-width: 370px;
+        padding: 0px;
+        border: none;
+    }
+
+    div.right-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer {
+        height: 70px;
+    }
+
+    div.extra-content {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-self: center;
+    }
+
+    div.extra-content h3.details-title {
+        display: none;
+    }
+
+    div.extra-content, div.bottom-card {
+        width: 370px;
+    }
+
+    div.bottom-card {
+        flex-direction: column;
+        padding: 3px;
+        border: none;
+        background-color: navy;
+    }
+
+    div.bottom-card img {
+        max-height: 250px;
+        max-width: 190px;
+        margin: 0px;
+    }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="everything">
+        <div class="title">
+            <h1 class="title" onclick="sendback();">
+                < D3 FIGHTERS >
+            </h1>
+        </div>
+        <div class="main-content">
+            <div class="left-card">
+                <h1>Joey Nip</h1>
+                <div class="image">
+                    <img src="assets/joey.jpg" alt="">
+                </div>
+                <!-- <div class="rarity">
+                <h2>SSR</h2>
+            </div> -->
+            </div>
+            <div class="right-card">
+                <!-- THIS KEEPS THE BOX IN PLACE: -->
+                <div class="empty"></div>
+
+                <!-- STUFF IN BOX -->
+                <div class="content">
+                    <div class="bio">
+                        <div class="header">
+                            <h3>BIO</h3>
+                            <img src="assets/down.svg" alt="" onclick="showContent('bio')" id="bio-arrow"
+                                class="expand-arrow">
+                        </div>
+                        <p id="bio">Hey there! My name is Joey. I enjoy tending to my houseplants, playing video games,
+                            and falling through YouTube rabbit holes. I also enjoy staring at my pet tarantulas and my
+                            pet snake named Bob.</p>
+                    </div>
+                    <div class="abilities">
+                        <div class="header">
+                            <h3>HOBBIES</h3>
+                            <img src="assets/down.svg" alt="" onclick="showGridContent('abilities')"
+                                id="abilities-arrow" class="expand-arrow">
+                        </div>
+                        <div id="abilities">
+                            <div class="ability dancing">
+                                <h4>CHORES</h4>
+                                <div class="bar one"></div>
+                            </div>
+                            <div class="ability sleeping">
+                                <h4>PROJECT DIVA</h4>
+                                <div class="bar two"></div>
+                            </div>
+                            <div class="ability design">
+                                <h4>HOUSEPLANT KEEPING</h4>
+                                <div class="bar three"></div>
+                            </div>
+                            <div class="ability coding">
+                                <h4>ORGANIZING</h4>
+                                <div class="bar four"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills">
+                        <div class="header">
+                            <h3>SKILLS</h3>
+                            <img src="assets/down.svg" alt="" onclick="showContent('skills')" id="skills-arrow"
+                                class="expand-arrow">
+                        </div>
+                        <ul id="skills">
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/photoshop.png" alt="">
+                                </div>
+                                <h4>PHOTOSHOP</h4>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/illustrator.png" alt="">
+                                </div>
+                                <h4>ILLUSTRATOR</h4>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/figma.webp" alt="">
+                                </div>
+                                <h4>FIGMA</h4>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/javascript.png" alt="">
+                                </div>
+                                <h4>JAVASCRIPT</h4>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="training">
+                        <div class="header">
+                            <h3>EDUCATION</h3>
+                            <img src="assets/down.svg" alt="" onclick="showContent('training')" id="training-arrow"
+                                class="expand-arrow">
+                        </div>
+                        <ul id="training">
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/bcit.png" alt="">
+                                </div>
+                                <h4>FSWD</h4>
+                                <p>2021-2022</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/bcit.png" alt="">
+                                </div>
+                                <h4>UX/UI</h4>
+                                <p>2022</p>
+                            </li>
+                            <li>
+                                <div class="icon">
+                                    <img src="assets/bcit.png" alt="">
+                                </div>
+                                <h4>D3</h4>
+                                <p>2022 ~ 2024</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="projects">
+                        <div class="header">
+                            <h3>PROJECTS</h3>
+                            <img src="assets/down.svg" alt="" onclick="showContent('projects')" id="projects-arrow"
+                                class="expand-arrow">
+                        </div>
+                        <ul id="projects">
+                            <li onclick="displayProject('bellabot')">
+                                <a href="#details">
+                                    <div class="icon">
+                                        <img src="assets/projects/icons/bellabot-icon.jpg" alt="">
+                                    </div>
+                                    <h4>BELLABOT</h4>
+                                    <p>MECHANICAL DRAWING</p>
+                                    <div class="overlay bellabot">
+                                        <img src="" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                            <li onclick="displayProject('socal')">
+                                <a href="#details">
+                                    <div class="icon">
+                                        <img src="assets/projects/icons/socal-icon.jpg" alt="">
+                                    </div>
+                                    <h4>SOCAL MEOWDOWN</h4>
+                                    <p>BOOK COVER</p>
+                                </a>
+                            </li>
+                            <li onclick="displayProject('edible')">
+                                <a href="#details">
+                                    <div class="icon">
+                                        <img src="assets/projects/icons/edible-icon.jpg" alt="">
+                                    </div>
+                                    <h4>EDIBLE</h4>
+                                    <p>GROCERY TRACKING APP</p>
+                                </a>
+                            </li>
+                            <li onclick="displayProject('viking-cat')">
+                                <a href="#details">
+                                    <div class="icon">
+                                        <img src="assets/projects/icons/viking-icon.jpg" alt="">
+                                    </div>
+                                    <h4>VIKING CAT</h4>
+                                    <p>COLOR RESTORATION</p>
+                                    <div class="overlay viking-cat" id="viking-cat">
+                                        <div class="faded-bg" id="viking-faded-bg"></div>
+                                        <img src="assets/viking-cat.jpg" alt="">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="another-empty"></div>
+            </div>
+        </div>
+
+        <div class="extra-content">
+            <h3 class="details-title" id="details">Project Details</h3>
+            <div class="bottom-card">
+                <img src="assets/projects/viking-cat.jpg" alt="" id="project-image">
+                <div class="project-info">
+                    <h3 class="project-title" id="project-title" style="color: lime;">viking-cat.psd</h3>
+                    <p class="project-medium" id="project-medium">photoshop.exe</p>
+                    <p class="project-description" id="project-description">Using the filter in photoshop, I restored
+                        color in an old black and white photo of a cat from the 1930s.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<footer>
+    <p>♥ made with love by joey ♥</p>
+    <p>COMP 1170 final project</p>
+</footer>
+
+</html>
