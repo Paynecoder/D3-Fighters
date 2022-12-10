@@ -11,8 +11,8 @@
 }
 
 body {
-    margin: 0;
-    background-color: black
+    background-color: black;
+    margin: 0px;
 }
 
 /* D3 FIGHTERS */
@@ -141,9 +141,19 @@ body {
     overflow: hidden;
 }
 
+.joeyimg:hover {
+    outline: 5px solid #fff !important;
+    overflow: hidden;
+}
+
 
 .jordanimg:focus {
     outline: 5px solid #fff !important;
+}
+
+.jordanimg:hover {
+    outline: 5px solid #fff !important;
+    overflow: hidden;
 }
 
 
@@ -151,9 +161,19 @@ body {
     outline: 5px solid #fff !important;
 }
 
+.joshimg:hover {
+    outline: 5px solid #fff !important;
+    overflow: hidden;
+}
+
 
 .carterimg:focus {
     outline: 5px solid #fff !important;
+}
+
+.carterimg:hover {
+    outline: 5px solid #fff !important;
+    overflow: hidden;
 }
 
 
@@ -269,7 +289,7 @@ input:checked {
 .fight {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 5px;
 }
 
 .fightbtn {
@@ -306,6 +326,7 @@ input:checked {
 .oppstats {
     display: flex;
     flex-direction: row-reverse;
+    min-width: none;
 }
 
 .oppstatbox {

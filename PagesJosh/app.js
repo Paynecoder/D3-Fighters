@@ -15,7 +15,6 @@ function master() {
   changeimage();
   changeskill();
   changetitle();
-  changetext();
 }
 
 function changeskill() {
